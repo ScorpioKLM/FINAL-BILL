@@ -896,7 +896,7 @@ img { height: auto; }
 .vo-nav img,.vo-hero-brand img{background:#000;mix-blend-mode:screen;}
 
 /* #12 VO hero balanced */
-.vo-hero{grid-template-columns:1.15fr .85fr!important;}
+@media(min-width:981px){.vo-hero{grid-template-columns:1.15fr .85fr!important;}}
 @media(max-width:760px){.vo-hero-media{justify-self:center!important;}}
 
 /* #13 VO bio buttons mobile stack */
@@ -1644,7 +1644,12 @@ function closeLand(){var l=document.getElementById('land-nav-links'),b=document.
 <p class="vo-label">Audiobook Authors</p>
 <h2 class="vo-h">Narrated Works From Respected Voices</h2>
 <div class="vo-rule" style="margin:1.1rem auto 1.8rem"></div>
-<div class="bb3d-stage authors"><div class="bb3d-scene"><span class="bb3d-card">Charles R. Swindoll</span><span class="bb3d-card">O.S. Hawkins</span><span class="bb3d-card">Dallas Willard</span><span class="bb3d-card">Charles F. Stanley</span><span class="bb3d-card">Richard Gleaves</span><span class="bb3d-card">Independent Authors &amp; Publishers</span></div></div>
+<div class="vo-mq reveal">
+<div class="vo-mq-track">
+<span class="vo-chip">Charles R. Swindoll</span><span class="vo-chip">O.S. Hawkins</span><span class="vo-chip">Dallas Willard</span><span class="vo-chip">Charles F. Stanley</span><span class="vo-chip">Richard Gleaves</span><span class="vo-chip">Independent Authors &amp; Publishers</span>
+<span class="vo-chip">Charles R. Swindoll</span><span class="vo-chip">O.S. Hawkins</span><span class="vo-chip">Dallas Willard</span><span class="vo-chip">Charles F. Stanley</span><span class="vo-chip">Richard Gleaves</span><span class="vo-chip">Independent Authors &amp; Publishers</span>
+</div>
+</div>
 </div>
 </section>
 
